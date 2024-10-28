@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinadores</title>
+</head>
+<body>
+    <h1>Lista de Treinadores</h1>
+    <ul>
+        <% treinadores.forEach(function(treinador) { %>
+            <li><%= treinador.nome %> - Pokémons: <%= treinador.pokemons.join(", ") %></li>
+        <% }); %>
+    </ul>
+    <a href="/">Voltar</a>
+</body>
+</html>

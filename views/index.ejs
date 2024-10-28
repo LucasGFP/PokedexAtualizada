@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+</head>
+<body>
+    <h1>Pokedex</h1>
+    <h2>Adicionar Pokémon</h2>
+    <form action="/pokemons" method="POST">
+        <input type="text" name="nome" placeholder="Nome" required />
+        <input type="text" name="tipo" placeholder="Tipo" required />
+        <input type="number" name="altura" placeholder="Altura (m)" required />
+        <input type="number" name="peso" placeholder="Peso (kg)" required />
+        <input type="number" name="nivelDePoder" placeholder="Nível de Poder" required />
+        <button type="submit">Adicionar Pokémon</button>
+    </form>
+    <br>
+    <h2>Adicionar Treinador</h2>
+    <form action="/treinadores" method="POST">
+        <input type="text" name="nome" placeholder="Nome do Treinador" required />
+        <input type="text" name="pokemons" placeholder="Pokémons (separados por vírgula)" required />
+        <button type="submit">Adicionar Treinador</button>
+    </form>
+    <br>
+    <a href="/pokemons">Ver Pokémon</a><br>
+    <a href="/treinadores">Ver Treinadores</a>
+</body>
+</html>
